@@ -1,0 +1,23 @@
+{
+  "name": "bella-secret-code-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx nodemon server.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "emoji-keywords": "^1.0.1",
+    "emojis-unicode": "^1.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
