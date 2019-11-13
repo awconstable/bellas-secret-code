@@ -60,7 +60,17 @@
     width: 960px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
   
+  .input-box-container {
+    display: block;
+    padding: 10px;
+    align: top;
+  }
+
+  input {
+    width: 400px;
+    height: 200px;
+  }
