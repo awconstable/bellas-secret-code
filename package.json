@@ -1,23 +1,22 @@
 {
-  "name": "bella-secret-code-test",
+  "name": "bella-secret-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "A secret code web application - ssshhh.",
   "main": "server.js",
   "scripts": {
     "start": "npx nodemon server.js",
+    "build": "browserify app/client.js > public/js/client.bundle.js",
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "emoji-keywords": "^1.0.1",
-    "emojis-unicode": "^1.0.1",
-    "express": "^4.17.1",
-    "nodemon": "^1.19.4",
-    "pug": "^2.0.4"
-  },
+  "author": "Bella Constable",
+  "license": "GPL v3",
+  "dependencies": {},
   "devDependencies": {
+    "browserify": "^16.5.0",
     "chai": "^4.2.0",
-    "mocha": "^6.2.2"
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4"
   }
 }

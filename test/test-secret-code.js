@@ -1,4 +1,4 @@
-const secretCode = require('./../secret-code');
+const secretCode = require('../lib/secret-code');
 
 var assert = require('assert');
 
