@@ -23,4 +23,20 @@ describe('secretCode', function(){
       assert.equal(secretCode.encodeWord("Bella!!!!"), "😋😂🙄🙄😃!!!!");
     });
   });
+
+  describe('#decodeEmoji("😋")', function(){
+    it('should return b', function(){
+      assert.equal(secretCode.decodeEmoji("😋"), "b");
+    });
+  });
+  describe('#decodeEmoji("!")', function(){
+    it('should return non-emoji characters back', function(){
+      assert.equal(secretCode.decodeEmoji("!"), "!");
+    });
+  });
+  describe('#decodeWord("😋😂🙄🙄😃!!!!")', function(){
+    it('should return decoded emojis for an entire word in lower case', function(){
+      assert.equal(secretCode.decodeWord("😋😂🙄🙄😃!!!!"), "bella!!!!");
+    });
+  });
 })
