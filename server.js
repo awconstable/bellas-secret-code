@@ -14,7 +14,7 @@ const server = app.listen(7000, () => {
 
   app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Homepage',
-        emoji: String.fromCodePoint('0x' + secretCode.encode('b'))
+        title: 'Bella\'s secret code',
+        emoji: secretCode.encodeWord('bella')
       });
   });
