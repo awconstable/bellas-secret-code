@@ -10,7 +10,7 @@ describe('secretCode', function(){
   });
   describe('#encodeLetter("A")', function(){
     it('should return the smiley emoji codepoint code for a', function(){
-      assert.equal(secretCode.encodeLetter("A"), "😃");
+      assert.equal(secretCode.encodeLetter("A"), "👩");
     });
   });
   describe('#encodeLetter("!")', function(){
@@ -20,7 +20,7 @@ describe('secretCode', function(){
   });
   describe('#encodeWord("Bella")', function(){
     it('should return the smiley emoji codepoint codes for an entire word', function(){
-      assert.equal(secretCode.encodeWord("Bella!!!!"), "😋😂🙄🙄😃!!!!");
+      assert.equal(secretCode.encodeWord("Bella!!!!"), "😬😂🙄🙄😃!!!!");
     });
   });
 
@@ -34,9 +34,9 @@ describe('secretCode', function(){
       assert.equal(secretCode.decodeEmoji("!"), "!");
     });
   });
-  describe('#decodeWord("😋😂🙄🙄😃!!!!")', function(){
+  describe('#decodeWord("😬😂🙄🙄😃!!!!")', function(){
     it('should return decoded emojis for an entire word in lower case', function(){
-      assert.equal(secretCode.decodeWord("😋😂🙄🙄😃!!!!"), "bella!!!!");
+      assert.equal(secretCode.decodeWord("😬😂🙄🙄😃!!!!"), "Bella!!!!");
     });
   });
 })

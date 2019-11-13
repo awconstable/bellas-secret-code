@@ -46,12 +46,38 @@ code.x = '1F975';
 code.y = '1F63A';
 code.z = '1F47E';
 
+code.A = '1F469';
+code.B = '1F62C';
+code.C = '1F920';
+code.D = '1F912';
+code.E = '1F974';
+code.F = '1F9B7';
+code.G = '1F484';
+code.H = '1F48B';
+code.I = '1F46E';
+code.J = '1F470';
+code.k = '1F930';
+code.L = '1F9D6';
+code.M = '1F469';
+code.N = '1F958';
+code.O = '1F35B';
+code.P = '1F378';
+code.Q = '1F36D';
+code.R = '1F36C';
+code.S = '1F361';
+code.T = '1F957';
+code.U = '1F9C1';
+code.V = '1F367';
+code.W = '1F369';
+code.X = '1F36A';
+code.Y = '1F961';
+code.Z = '1F962';
+
 exports.encodeLetter = (letter) => {
-    var lowerLetter = letter.toLowerCase();
-    if(lowerLetter in code){
-        return String.fromCodePoint('0x' + code[lowerLetter]);
+    if(letter in code){
+        return String.fromCodePoint('0x' + code[letter]);
     } else {
-        return lowerLetter;
+        return letter;
     }     
 }
 
