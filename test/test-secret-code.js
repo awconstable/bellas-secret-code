@@ -39,4 +39,4 @@ describe('secretCode', function(){
       assert.equal(secretCode.decodeWord("😬😂🙄🙄😃!!!!"), "Bella!!!!");
     });
   });
-})
+});
