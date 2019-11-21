@@ -17,7 +17,7 @@ $(document).ready(function(){
 },{"./../lib/secret-code":2,"jquery":4}],2:[function(require,module,exports){
 const punycode = require('punycode');
 
-const code = new Object();
+const code = {};
 
 code.a = '1F603'; //:smiley:
 code.b = '1F60B'; //:yum:
@@ -79,7 +79,7 @@ exports.encodeLetter = (letter) => {
     } else {
         return letter;
     }     
-}
+};
 
 exports.encodeWord = (word) => {
     var encodedWord = '';
@@ -91,7 +91,7 @@ exports.encodeWord = (word) => {
     }
 
     return encodedWord;
-}
+};
 
 exports.decodeEmoji = (emoji) => {
 
@@ -104,7 +104,7 @@ exports.decodeEmoji = (emoji) => {
     
     return emoji;
 
-}
+};
 
 exports.decodeWord = (word) => {
     var decodedWord = '';
@@ -116,7 +116,7 @@ exports.decodeWord = (word) => {
     }
 
     return decodedWord;
-}
+};
 },{"punycode":3}],3:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
