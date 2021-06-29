@@ -17,7 +17,7 @@
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "mocha": "^8.3.2",
-    "nodemon": "^1.19.4",
+    "nodemon": "^2.0.8",
     "punycode": "^2.1.1"
   }
 }
